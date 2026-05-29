@@ -1,0 +1,43 @@
+Peraturan Permainan Crazy Eight :
+1. Setiap objek player dikasih 5 kartu atau lebih
+2. dan ada satu kartu faced up di "discard pile"
+3. sisa kartu lain di taroh di draw pile
+4. setiap player takes turn to place a card from their pile on the discard pile if their catch matches the rank suit of the very top card, or if they want to place a wildcard
+5. kalau gk ada dari kartu mereka yang match the card, they have to draw a card from the draw pile until they find an according one that matches
+6. if the player cannot play because the stock pile is exhausted, the player must past the turn to the player on the left 
+7. the game ended when a player card is empty
+8. the remaining players got penalty according to their remaining cards, 8 is minus 20 points, face cards are worth 10, other cards are worth their ranks 
+
+Kalau ada babak
+1. the player with the lowest score when a player points hit 100 is the winner, or 50 x number of players
+
+Facts
+1. An eight cannot be the card to start a discard pile, if that happens shuffle the eight into the draw pile, and then draw a card again fron th very top of the draw pile 
+2. kalau draw pile abis maka the player with the lowest score win
+
+objek
+1. card collection (has-a card)
+2. hand player (has-a card collection)
+3. discard pile (is-a card collection)
+4. draw pile (is-a card collection)
+5. card
+6. player (has-a hand player)
+7. battlemanager
+
+main method
+- deal
+- draw
+- discard
+
+implementasi
+- karena deck dan pile adalah hal yang samatetapi beda isi doang maka disatukan dengan perbedaan
+- class cardcollection
+
+Deck kartu (52 kartu)
+- clubs (keriting) = 13 kartu
+- Diamonds (wajik) = 13 kartu
+- Hearts (Hati) = 13 kartu 
+- Spades (sepok) = 13 kartu
+
+1 s.d 10, jack (J), queen (Q), King (K)
+
